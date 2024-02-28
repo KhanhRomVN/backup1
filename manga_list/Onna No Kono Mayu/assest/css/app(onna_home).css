@@ -1,0 +1,235 @@
+:root {
+    --font: "Sen", sans-serif;
+	/* -=-=-=-=-=- Light -=-=-=-=-=-=-=-*/
+	/* Primary Text */
+	--primary-color_light: #4F98CA; 
+	/* Background Color */
+	--background-color1-light: rgb(255, 255, 255);
+	--background-color2-light: rgba(0, 0, 0, 0.4);
+	/* Box Shadow */
+	--box-shadow-defaut-light: 0.3125em 0.3125em 0.625em #272727;
+	--box-shadow-hover-light: 0.3125em 0.3125em 15em #4F98CA;;
+	/* Text */
+    --text-color-light: rgb(0, 0, 0);
+    --text-color-hover-light: #4F98CA;
+    /* Border */
+    --border-box-light: rgb(0, 0, 0) 0.3125em solid;
+    --border-button-light: rgb(0, 0, 0) 0.1em solid;
+
+    /* -=-=-=-=-=- Dark -=-=-=-=-=-=-=-*/
+    /* Primary Text */
+	--primary-color_dark: #EE2B47; 
+	--primary-text-dark: #F6F6F6;
+	--primary-text-hover: #EE2B47;
+	/* Background Color */
+	--background-color1-dark: #34374C;
+	--background-color2-dark: #2C2E3E;
+	/* Box Shadow */
+	--box-shadow-defaut-dark: 0.3125em 0.3125em 0.625em #F6F6F6;
+	--box-shadow-hover-dark: 0.3125em 0.3125em 15em #EE2B47;;
+	/* Text */
+    --text-color-dark: rgb(255, 255, 255);
+    --text-color-hover-dark: #EE2B47;
+    /* Border */
+    --border-box-dark: #F6F6F6 0.3125em solid;
+    --border-button-dark: #F6F6F6 0.1em solid;
+}
+
+.app {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* banner */
+
+.banner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner_item {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* nav */
+.nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: var(--background-color2-light);
+    box-shadow: var(--box-shadow-defaut-light);
+    position: absolute;
+    bottom: 0;
+}
+
+.nav_item {
+    display: flex;
+    align-items: center;
+    padding: 0 50px 0 50px;
+}
+
+.nav_left {
+    height: 100%;
+    width: 50%;
+}
+
+.nav_right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav_left_item,
+.nav_right_item {
+    font-size: 200%;
+    /* color: var(--text-color-light); */
+    color: var(--text-color-dark);
+    font-family: "Sen", sans-serif;
+    font-weight: 550;
+}
+
+.nav_left_item {
+    margin-right: 30px;
+}
+
+.nav_right_item {
+    margin-left: 30px;
+}
+
+/* content */
+.content {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #e5e7eb;
+}
+
+/* 1. Chapter */
+.chapter {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 20px 10px 10px 10px;
+    overflow: auto;
+    background-color: #f9fafb;
+}
+
+.chapter_item {
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    margin: 0 15px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 20px;
+    border: var(--border-button-light);
+}
+
+.chapter_item_img_container {
+    height: 100%;
+    width: 20%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.chapter_item_img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.chapter_item_info {
+    font-size: 25px;
+    width: 100%;
+    color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: var(--font);
+    justify-content: flex-start;
+    font-weight: 520;
+}
+
+/* content_right */
+.content_right {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f9fafb;
+}
+
+.content_right_title {
+    margin: 15px 0 15px 0;
+    font-size: 25px;
+    font-weight: 530;
+    font-family: var(--font);
+}
+
+.content_right_list_item {
+    height: 180px;
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom: rgb(0, 0, 0) 0.1em solid;
+}
+
+.content_right_list_img {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.content_right_list_title {
+    font-size: 30px;
+    font-weight: 530;
+    font-family: var(--font);
+    margin-left: 15px;
+}
+
+/* 2.Introduce */
+.introduce {
+    width: 85%;
+    height: 100%;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: auto;
+    display: none;
+}
+
+.introduce_chapnum {
+    font-size: 60px;
+}
+
+.introduce_introduce {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+
+

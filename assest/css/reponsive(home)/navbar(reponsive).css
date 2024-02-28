@@ -1,0 +1,43 @@
+/* ======== Reponsive ======== */
+
+/* width <= 599px */
+@media (max-width: 599px) {
+    .nav_left-logo {
+      font-size: 30px;
+    }
+    .nav_left-slogan {
+      display: none;
+    }
+    
+    .nav_right-login,
+    .nav_right-signup,
+    .nav_right-search {
+      display: none;
+    }
+  
+  }
+  
+  /* 600px <= width <= 899px */
+  @media (min-width: 600px) and (max-width: 899px) {
+    .nav_left-slogan {
+      display: none;
+    }
+  }
+  
+/* 900px <= width <= 1199px */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .nav_left-slogan {
+    display: none;
+  }
+}
+  
+  /* 1200px <= width <= 1599px */
+@media (min-width: 1200px) and (max-width: 1599px) {
+  
+}
+  
+/* 1600px <= width */
+@media (min-width: 1600px) {
+  
+}
+

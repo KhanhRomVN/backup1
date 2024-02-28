@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="./assest/css/style(login).css">
+  <!-- Reponsive Link -->
+  <link rel="stylesheet" href="./assest/reponsive/style(login)_reponsive.css">
+  <!-- Font Link -->
+  <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <title>Login</title>
+</head> 
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="navbar_item nav_left">
+          <a href="/index.html" class="nav_left_item nav_left-logo">KR Team</a>
+      </div>
+      <div class="navbar_item nav_right">
+          <a href="./sign_up.html" class="nav_right_item nav_right-signup">Sign Up</a>
+          <a href="#" class="nav_right_item nav_right-search">Search</a>
+          <i class='nav_right_item bx bx-menu nav_right-setting'></i>
+      </div>
+    </div>
+    <div class="login">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+        <div class="links">
+            <a href="forgot_password.php">Forget Password?</a>
+            <a href="./sign_up.html">Sign Up?</a>
+        </div>
+        <div class="social-buttons">
+            <button class="facebook">Login with Facebook</button>
+            <button class="google">Login with Google</button>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

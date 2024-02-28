@@ -1,0 +1,90 @@
+:root {
+    --font: "Sen", sans-serif;
+	/* -=-=-=-=-=- Light -=-=-=-=-=-=-=-*/
+	/* Primary Text */
+	--primary-color_light: #4F98CA; 
+	/* Background Color */
+	--background-color1-light: rgb(255, 255, 255);
+	--background-color2-light: rgba(0, 0, 0, 0.1);
+	/* Box Shadow */
+	--box-shadow-defaut-light: 0.3125em 0.3125em 0.625em #272727;
+	--box-shadow-hover-light: 0.3125em 0.3125em 15em #4F98CA;;
+	/* Text */
+    --text-color-light: rgb(0, 0, 0);
+    --text-color-hover-light: #4F98CA;
+    /* Border */
+    --border-box-light: rgb(0, 0, 0) 0.3125em solid;
+    --border-button-light: rgb(0, 0, 0) 0.1em solid;
+
+    /* -=-=-=-=-=- Dark -=-=-=-=-=-=-=-*/
+    /* Primary Text */
+	--primary-color_dark: #EE2B47; 
+	--primary-text-dark: #F6F6F6;
+	--primary-text-hover: #EE2B47;
+	/* Background Color */
+	--background-color1-dark: #34374C;
+	--background-color2-dark: #2C2E3E;
+	/* Box Shadow */
+	--box-shadow-defaut-dark: 0.3125em 0.3125em 0.625em #F6F6F6;
+	--box-shadow-hover-dark: 0.3125em 0.3125em 15em #EE2B47;;
+	/* Text */
+    --text-color-dark: rgb(255, 255, 255);
+    --text-color-hover-dark: #EE2B47;
+    /* Border */
+    --border-box-dark: #F6F6F6 0.3125em solid;
+    --border-button-dark: #F6F6F6 0.1em solid;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ----------------------------------------------------*/
+body {
+	font-family: "Roboto", sans-serif;
+	height: auto;
+}
+
+a {
+    color: #ffffff; 
+    text-decoration: none; 
+}

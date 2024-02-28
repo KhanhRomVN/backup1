@@ -1,0 +1,97 @@
+:root {
+    --font: "Sen", sans-serif;
+	/* -=-=-=-=-=- Light -=-=-=-=-=-=-=-*/
+	/* Primary Text */
+	--primary-color_light: #4F98CA; 
+	/* Background Color */
+	--background-color1-light: rgb(255, 255, 255);
+	--background-color2-light: rgba(0, 0, 0, 0.1);
+	/* Box Shadow */
+	--box-shadow-defaut-light: 0.3125em 0.3125em 0.625em #272727;
+	--box-shadow-hover-light: 0.3125em 0.3125em 15em #4F98CA;;
+	/* Text */
+    --text-color-light: rgb(0, 0, 0);
+    --text-color-hover-light: #4F98CA;
+    /* Border */
+    --border-box-light: rgb(0, 0, 0) 0.3125em solid;
+    --border-button-light: rgb(0, 0, 0) 0.1em solid;
+
+    /* -=-=-=-=-=- Dark -=-=-=-=-=-=-=-*/
+    /* Primary Text */
+	--primary-color_dark: #EE2B47; 
+	--primary-text-dark: #F6F6F6;
+	--primary-text-hover: #EE2B47;
+	/* Background Color */
+	--background-color1-dark: #34374C;
+	--background-color2-dark: #2C2E3E;
+	/* Box Shadow */
+	--box-shadow-defaut-dark: 0.3125em 0.3125em 0.625em #F6F6F6;
+	--box-shadow-hover-dark: 0.3125em 0.3125em 15em #EE2B47;;
+	/* Text */
+    --text-color-dark: rgb(255, 255, 255);
+    --text-color-hover-dark: #EE2B47;
+    /* Border */
+    --border-box-dark: #F6F6F6 0.3125em solid;
+    --border-button-dark: #F6F6F6 0.1em solid;
+}
+
+/* app */
+.app {
+    background-color: var(--background-color2-light);
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    justify-content: start; 
+    align-items: center; 
+}
+
+/* option */
+.option {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Căn giữa ngang */
+    align-items: center; /* Căn giữa dọc */
+}
+
+.option_item {
+    width: 70%;
+    background-color: #4F98CA;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.option_title {
+    font-size: 50px;
+    color: var(--primary-text-dark);
+}
+
+.option_transfer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option_transfer_chapter {
+    font-size: 40px;
+    color: var(--primary-text-dark);
+}
+
+.option_transfer_chappage {
+    display: flex;
+    gap: 20px;
+}
+
+.option_transfer_chappage_item {
+}
+
+/* container */
+.img_list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Sắp xếp các items theo chiều dọc */
+    justify-content: start; /* Căn giữa các items theo chiều dọc (chính) */
+    align-items: center; /* Căn giữa các items theo chiều ngang (phụ) */
+}

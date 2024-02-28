@@ -1,0 +1,277 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-family: "Sen", sans-serif;
+}
+
+a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+/* ----------------------------------------------------*/
+/* container */
+.container {
+  background-image: url('/login&sign_up/assest/img/onna_banner.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a background color */
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+.navbar_item {
+  display: flex;
+  align-items: center;
+}
+
+.nav_left {
+  width: auto;
+  height: 100%;
+}
+
+.nav_left_item {
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Sen", sans-serif;
+}
+
+.nav_right {
+  width: auto;
+  height: 100%;
+}
+
+.nav_right_item {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  margin-left: 14px;
+  font-family: "Sen", sans-serif;
+}
+
+.nav_right-setting {
+  font-size: 40px;
+}
+
+/* width <= 599px */
+@media (max-width: 599px) {
+  .nav_left-logo {
+    font-size: 30px;
+  }
+  .nav_left-slogan {
+    display: none;
+  }
+  
+  .nav_right-login,
+  .nav_right-signup,
+  .nav_right-search {
+    display: none;
+  }
+
+}
+
+/* 600px <= width <= 899px */
+@media (min-width: 600px) and (max-width: 899px) {
+  .nav_left-slogan {
+    display: none;
+  }
+}
+
+/* 900px <= width <= 1199px */
+@media (min-width: 900px) and (max-width: 1199px) {
+.nav_left-slogan {
+  display: none;
+}
+}
+
+/* 1200px <= width <= 1599px */
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+}
+
+/* 1600px <= width */
+@media (min-width: 1600px) {
+
+}
+
+/* login */
+.sign_up {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 100px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.sign_up input[type="text"],
+.sign_up input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.sign_up input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.sign_up input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.sign_up .links {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 520;
+}
+
+.sign_up .links a {
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.sign_up .social-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.sign_up .social-buttons button {
+  width: calc(50% - 5px);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign_up .social-buttons button.facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.sign_up .social-buttons button.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* Reponsive */
+/* width <= 599px */
+@media (max-width: 599px) {
+  .sign_up .social-buttons {
+      flex-direction: column;
+  }
+
+  .sign_up .social-buttons button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
+/* 600px <= width <= 899px */
+@media (min-width: 600px) and (max-width: 899px) {
+  .sign_up .social-buttons button {
+      width: calc(50% - 5px);
+      margin-bottom: 10px;
+  }
+
+  .sign_up {
+    margin-top: 30%;
+  }
+}
+
+/* 900px <= width <= 1199px */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .sign_up {
+    margin-top: 8%;
+  }
+}
+
+/* 1200px <= width <= 1599px */
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .sign_up {
+    margin-top: 15%;
+  }
+}
+
+/* 1600px <= width */
+@media (min-width: 1600px) {
+  .sign_up {
+    margin-top: 20%;
+  }
+}
